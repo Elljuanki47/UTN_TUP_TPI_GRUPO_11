@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+
+# Compilaciones
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+
+# Archivos temporales
+*.tmp
+*.log
