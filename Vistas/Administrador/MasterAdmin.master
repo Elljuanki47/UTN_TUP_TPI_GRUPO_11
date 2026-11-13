@@ -1,0 +1,34 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterAdmin.master.cs" Inherits="Vistas.Administrador.MasterAdmin" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Clínica - Administrador</title>
+    <style type="text/css">
+        body { font-family: Segoe UI, Arial, sans-serif; margin: 0; }
+        .encabezado { background: #2c5aa0; color: white; padding: 10px 20px; }
+        .menu { padding: 10px 20px; background: #eef2f8; }
+        .menu a { margin-right: 15px; color: #2c5aa0; font-weight: bold; text-decoration: none; }
+        .contenido { padding: 20px; }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="encabezado">
+            <b>Clínica</b> &nbsp;|&nbsp; Usuario: <asp:Label ID="lblUsuario" runat="server" Text="(sin sesión)"></asp:Label>
+        </div>
+        <div class="menu">
+            <asp:HyperLink runat="server" NavigateUrl="~/Administrador/InicioAdmin.aspx">Inicio</asp:HyperLink>
+            <asp:HyperLink runat="server" NavigateUrl="~/Administrador/ListadoPacientes.aspx">Pacientes</asp:HyperLink>
+            <asp:HyperLink runat="server" NavigateUrl="~/Administrador/ListadoMedicos.aspx">Médicos</asp:HyperLink>
+            <asp:HyperLink runat="server" NavigateUrl="~/Administrador/AsignarTurno.aspx">Asignar turno</asp:HyperLink>
+            <asp:HyperLink runat="server" NavigateUrl="~/Administrador/Informes.aspx">Informes</asp:HyperLink>
+            <asp:HyperLink runat="server" NavigateUrl="~/Login.aspx">Cerrar sesión</asp:HyperLink>
+        </div>
+        <div class="contenido">
+            <asp:ContentPlaceHolder ID="cphContenido" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
