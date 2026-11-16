@@ -49,6 +49,17 @@
             <h2>Agregar medico</h2>
         <table class="auto-style1">
             <tr>
+                <td class="auto-style3">Legajo:</td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="txtLegajo" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="rfvLegajo" runat="server" ControlToValidate="txtLegajo" ErrorMessage="Ingrese el legajo." ForeColor="Red" />
+                </td>
+                <td>&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+            </tr>
+            <tr>
                 <td class="auto-style3">Nombre:</td>
                 <td class="auto-style2">
                     <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
@@ -83,6 +94,45 @@
                 <td class="auto-style8">&nbsp;</td>
             </tr>
             <tr>
+                <td class="auto-style3">Sexo:</td>
+                <td class="auto-style2">
+                    <asp:DropDownList ID="ddlSexo" runat="server">
+                        <asp:ListItem Text="-- Seleccione --" Value="0" />
+                        <asp:ListItem Text="Masculino" Value="1" />
+                        <asp:ListItem Text="Femenino" Value="2" />
+                    </asp:DropDownList>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="rfvSexo" runat="server" ControlToValidate="ddlSexo" InitialValue="0" ErrorMessage="Seleccione el sexo." ForeColor="Red" />
+                </td>
+                <td>&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+            </tr>
+            
+            <tr>
+                <td class="auto-style3">Nacionalidad:</td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="txtNacionalidad" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="rfvNacionalidad" runat="server" ControlToValidate="txtNacionalidad" ErrorMessage="Ingrese la nacionalidad." ForeColor="Red" />
+                </td>
+                <td>&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+            </tr>
+            
+            <tr>
+                <td class="auto-style3">Fecha de nacimiento:</td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="txtFechaNacimiento" runat="server" TextMode="Date"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="rfvFechaNacimiento" runat="server" ControlToValidate="txtFechaNacimiento" ErrorMessage="Ingrese la fecha de nacimiento." ForeColor="Red" />
+                </td>
+                <td>&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+            </tr>
+            <tr>
                 <td class="auto-style3">Especialidad:</td>
                 <td class="auto-style2">
                     <asp:DropDownList ID="ddlEspecialidad" runat="server">
@@ -96,6 +146,53 @@
                 <td>
                     <asp:RequiredFieldValidator ID="rfvEspecialidad" runat="server" ControlToValidate="ddlEspecialidad" ErrorMessage="Seleccione una especialidad." ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
                     </td>
+                <td>&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Dirección:</td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="txtDireccion" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDireccion" ErrorMessage="Ingrese la dirección." ForeColor="Red" />
+                </td>
+                <td>&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+            </tr>
+            
+            <tr>
+                <td class="auto-style3">Provincia:</td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="txtProvincia" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="rfvProvincia" runat="server" ControlToValidate="txtProvincia" ErrorMessage="Ingrese la provincia." ForeColor="Red" />
+                </td>
+                <td>&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+            </tr>
+            
+            <tr>
+                <td class="auto-style3">Localidad:</td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="txtLocalidad" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad" ErrorMessage="Ingrese la localidad." ForeColor="Red" />
+                </td>
+                <td>&nbsp;</td>
+                <td class="auto-style8">&nbsp;</td>
+            </tr>
+            
+            <tr>
+                <td class="auto-style3">Teléfono:</td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="txtTelefono" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="rfvTelefono" runat="server" ControlToValidate="txtTelefono" ErrorMessage="Ingrese el teléfono." ForeColor="Red" />
+                </td>
                 <td>&nbsp;</td>
                 <td class="auto-style8">&nbsp;</td>
             </tr>

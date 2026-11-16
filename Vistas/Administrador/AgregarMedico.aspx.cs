@@ -68,9 +68,20 @@ namespace Vistas.Administrador
 
         protected void LimpiarCampos()
         {
+            txtLegajo.Text = "";
             txtNombre.Text = "";
             txtApellido.Text = "";
             txtDni.Text = "";
+
+            ddlSexo.SelectedIndex = 0;
+            txtNacionalidad.Text = "";
+            txtFechaNacimiento.Text = "";
+
+            txtDireccion.Text = "";
+            txtProvincia.Text = "";
+            txtLocalidad.Text = "";
+            txtTelefono.Text = "";
+
             txtCorreo.Text = "";
             txtUsuario.Text = "";
             txtContrasenia.Text = "";

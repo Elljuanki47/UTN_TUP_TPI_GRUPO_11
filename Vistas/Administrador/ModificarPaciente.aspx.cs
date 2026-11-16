@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Vistas.Administrador
 {
@@ -14,6 +10,23 @@ namespace Vistas.Administrador
             if (!IsPostBack && Session["Usuario"] != null)
             {
                 lblUsuario.Text = "Usuario: " + Session["Usuario"].ToString();
+            }
+
+            if (!IsPostBack)
+            {
+                ddlPacientes.Items.Add("11111111");
+
+                txtDni.Text = "11111111";
+                txtNombre.Text = "Juan";
+                txtApellido.Text = "Perez";
+                ddlSexo.SelectedIndex = 0;
+                txtNacionalidad.Text = "Argentina";
+                txtFechaNacimiento.Text = "1995-03-15";
+                txtDireccion.Text = "Av. Presidente Perón 1540";
+                txtLocalidad.Text = "Los Polvorines";
+                txtProvincia.Text = "Buenos Aires";
+                txtEmail.Text = "juanperez@gmail.com";
+                txtTelefono.Text = "1122223333";
             }
         }
     }
