@@ -31,7 +31,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Clínica - Inicio de sesión</h2>
+            <h2>&nbsp;Clínica - Inicio de sesión</h2>
 
             <table class="auto-style1">
                 <tr>
