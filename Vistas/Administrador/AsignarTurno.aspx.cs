@@ -11,6 +11,10 @@ namespace Vistas.Administrador
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack && Session["Usuario"] != null)
+            {
+                lblUsuario.Text = "Usuario: " + Session["Usuario"].ToString();
+            }
 
         }
     }

@@ -13,5 +13,12 @@ namespace Vistas
         {
 
         }
+
+        protected void btnIngresar_Click(object sender, EventArgs e)
+        {
+            txtUsuario.Text = "";
+            txtContrasenia.Text = "";
+        }
     }
+    
 }
